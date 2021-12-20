@@ -1,0 +1,420 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	body{
+		font-family:arial;
+	}
+	.header{
+		background-color:#c3c9d4;
+		height:70px;
+	}
+	.charts-container{
+		height:1000px;
+		width:1200px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	.header-center{
+		height:66px;
+		width:1200px;
+		margin-left:auto;
+		margin-right: auto;
+		display:flex;
+	}
+	.charts-sort{
+		background-color:white;
+		height:45px;
+		padding-top:15px;
+	}
+
+	.box-logo{
+		height:66px;
+		width:700px;
+		margin-top:10px;
+	}
+	.box-links{
+		height:43px;
+		width:2400px;
+		padding-top:23px;
+		text-align:center;
+		display:flex;
+	}
+	.lo{
+		margin-left:80px;
+		margin-top:5px;
+	}
+	.box-buttons{
+		height:43px;
+		width:700px;
+		text-align:center;
+		padding-top:23px;
+	}
+
+	.charts-rank{			
+		height:120px;
+		width:350px;
+		text-align:center;
+		font-family:arial;
+		font-size:23px;
+	}
+	.charts-info{			
+		height:120px;
+		width:2000px;
+	}
+	.charts-button{			
+		height:120px;
+		width:500px;
+	}
+	.charts-img{			
+		height:120px;
+		width:350px;
+	}
+
+	
+
+	.charts-new{
+		background: linear-gradient(90deg, rgba(255,229,210,1) 6%, rgba(255,154,0,1) 40%, rgba(173,90,0,1) 92%);
+		height:120px;
+		margin-top:10px;
+		display:flex;
+		border-radius:5px;
+	}
+	.charts-down{
+		background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,38,38,1) 50%, rgba(153,14,14,1) 100%);
+		height:120px;
+		margin-top:10px;
+		display:flex;
+		border-radius:5px;
+	}
+	.charts-up{
+		background: linear-gradient(90deg, rgba(81,223,24,1) 1%, rgba(80,140,14,1) 40%, rgba(255,255,255,1) 85%);
+		height:120px;
+		margin-top:10px;
+		display:flex;
+		border-radius:5px;
+	}
+	.number{
+		font-size:30px; 
+		margin-top:20px;
+		color:black;
+	}
+
+	.up{
+		font-size:20px; 
+		margin-top:-10px;
+		color:green;
+	}
+	.down{
+		font-size:20px; 
+		margin-top:-10px;
+		color:red;
+	}
+	.new{
+		font-size:20px; 
+		margin-top:-10px;
+		color:#ffa01b;
+	}
+	.namesong{
+		font-size:24px;
+		font-weight:bold;
+		color:#05305c;
+	}
+	.opssong{
+		font-size:16px;
+		font-weight:bold;
+		color:#80818a;
+	}
+	.btn1{
+		height:30px;
+		width:110px;
+		border-radius:4px;
+		border:none;
+		color:white;
+		background-color:orange;
+	}
+	.btn2{
+		height:30px;
+		width:110px;
+		border-radius:4px;
+		border:none;
+		color:white;
+		background-color:red;
+	}
+	.btn3{
+		height:30px;
+		width:110px;
+		border-radius:4px;
+		border:none;
+		color:white;
+		background-color:green;
+	}
+	.btn4{
+		height:30px;
+		width:110px;
+		border-radius:4px;
+		border:none;
+		color:white;
+		background-color:purple;
+	}
+	.btn5{
+		height:30px;
+		width:110px;
+		border-radius:4px;
+		border:none;
+		color:white;
+		background-color:purple;
+	}
+	.btnbuy{
+		height:30px;
+		width:90px;
+		border-radius:4px;
+		border:none;
+		background-color:green;
+		color:white;
+		margin-top:15px;
+	}
+	.btnon{
+		height:30px;
+		width:120px;
+		border-radius:4px;
+		border:none;
+		background-color:blue;
+		color:white;
+		margin-top:15px;
+	}
+</style>
+<body>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.svg" height="50">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<div class="lo">
+			<a href="" style="color:white;">CHARTS</a>
+			</div>
+			<div class="lo">
+			<a href="" style="color:white;">NEWS</a>
+			</div>
+			<div class="lo">
+			<a href="" style="color:red;">VIDEO</a>
+			</div>
+			<div class="lo">
+			<a href="" style="color:orange;">PHOTOS</a>
+			</div>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="btn5">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-container">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="btn1">THIS WEEK</button>
+		<button class="btn2">LAST WEKK</button>
+		<button class="btn3">PEAK</button>
+		<button class="btn4">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>1</b></p>
+			
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">SAINt JHN - Roses</p>
+			
+			<p class="opssong">New Beat Order, Svniivan, Cour, Veronica Bravo Cover</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnon">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/1.png" height="120">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>2</b></p>
+			
+			<p class="new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">More Than You Know</p>
+			
+			<p class="opssong">Harddope, Halvorsen, LexMorris</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnbuy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/2.png" height="120">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>3</b></p>
+			
+			<p class="new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">Goosebumps</p>
+			
+			<p class="opssong">Svniivan, Golden Wizards, Salvo</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnbuy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/3.png" height="120">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>4</b></p>
+			
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">Make Me Feel</p>
+			
+			<p class="opssong">NALYRO & Ricii Lompeurs</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnbuy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/4.png" height="120">
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>5</b></p>
+			
+			<p class="down">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">Better Off Without Me</p>
+			
+			<p class="opssong">Lukas G</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnbuy">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/5.png" height="120">
+		</div>	
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>6</b></p>
+			
+			<p class="new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">Survivor</p>
+			
+			<p class="opssong">Besomorph & RIELL</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnon">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/6.png" height="120">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<p class="number"><b>7</b></p>
+			
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="namesong">Pour It Up (NOTFUN Remix)</p>
+			
+			<p class="opssong">Trilla Venus</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="btnon">Вопроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="musics/7.png" height="120">
+		</div>		
+	</div>
+</div>
+</body>
+<!--  
+ТОП-7 любимых музык/песен
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+-->
